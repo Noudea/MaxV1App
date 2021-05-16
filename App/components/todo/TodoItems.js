@@ -10,7 +10,7 @@ const TodoItem = ({title,checked}) => {
         <View style={styles.item}>
             <BouncyCheckbox
                 size={25}
-                fillColor={ThemeColors.defaultTheme.tabBar}
+                fillColor={ThemeColors.defaultTheme.secondary}
                 unfillColor="#FFFFFF"
                 text={title}
                 isChecked={checked}

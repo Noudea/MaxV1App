@@ -3,7 +3,7 @@ const ThemeColors = {
         background : '#F3EDDD',
         border : '#707070',
         text : '#344F5A',
-        tabBar : '#B9DBE2'
+        secondary : '#B9DBE2'
     }
 }
 

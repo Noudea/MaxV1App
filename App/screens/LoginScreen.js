@@ -65,6 +65,9 @@ const LoginScreen = ({navigation}) => {
         }
     };
 
+    const register = () => {
+        
+    }
     return (
         <View>
             <TextInput
@@ -84,6 +87,12 @@ const LoginScreen = ({navigation}) => {
             <Button
                 onPress={login}
                 title="Login"
+                color="#841584"
+                accessibilityLabel="Learn more about this purple button"
+            />
+            <Button
+                onPress={register}
+                title="Register"
                 color="#841584"
                 accessibilityLabel="Learn more about this purple button"
             />

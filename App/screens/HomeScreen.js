@@ -16,7 +16,7 @@ const HomeScreen = ({navigation}) => {
     }
 
 
-    return(<View style={GlobalStyle.Default}>
+    return(<View style={GlobalStyle.View}>
         <Text>Home Screen</Text>
         {isLoggedIn ?  <Button onPress={logout} title="Logout"></Button>  :  <Text>Logged Out</Text>}
     </View>)
