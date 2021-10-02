@@ -7,10 +7,10 @@ const Stack = createStackNavigator();
 const AppLayout = () => {
     return (
         <>
-            <AppTabNavigator></AppTabNavigator>
-        {/* <Stack.Navigator>
+            {/* <AppTabNavigator></AppTabNavigator> */}
+        <Stack.Navigator>
             <Stack.Screen name="Home" component={BaseDrawer} />
-        </Stack.Navigator> */}
+        </Stack.Navigator>
         </>
     );
 };

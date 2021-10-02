@@ -10,8 +10,11 @@ const Tab = createBottomTabNavigator();
 const AppTabNavigator = () => {
   return (
     <Tab.Navigator>
-        <Tab.Screen name="HomeApp" component={HomeStack} />
-        <Tab.Screen name="TestScreen" component={TodoScreen} />
+        <Tab.Screen name="Accueil" component={HomeStack} />
+        <Tab.Screen name="Journal" component={TodoScreen} />
+        <Tab.Screen name="Ajouter" component={TodoScreen} />
+        <Tab.Screen name="To do list" component={TodoScreen} />
+        <Tab.Screen name="Tracker" component={TodoScreen} />
     </Tab.Navigator>
   );
 }

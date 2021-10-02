@@ -25,44 +25,44 @@ const AuthProvider = ({children, ...props}) => {
     
     useEffect(async () => {
         //check avec token jwt
-        const getToken = async () => {
-            try {
-                const token = await AsyncStorage.getItem('token');
-                console.log('StoredTokenAuthProvider', token);
-                return token;
-                if (value !== null) {
-                    // value previously stored
-                }
-            } catch (e) {
-                // error reading value
-            }
-        };
-        // console.log('context',context)
-        const token = await getToken();
-        // getToken();
-        console.log('token', token);
+        // const getToken = async () => {
+        //     try {
+        //         const token = await AsyncStorage.getItem('token');
+        //         console.log('StoredTokenAuthProvider', token);
+        //         return token;
+        //         if (value !== null) {
+        //             // value previously stored
+        //         }
+        //     } catch (e) {
+        //         // error reading value
+        //     }
+        // };
+        // // console.log('context',context)
+        // const token = await getToken();
+        // // getToken();
+        // console.log('token', token);
 
-        if (token) {
-            //verifier le token grâce à un appelle api
-            console.log('le token',token)
-            axios.post('http://10.0.2.2:8080/api/token/verify',{
-                token: token
-            }).then((response) => {
-                console.log('response',response.data.token)
-                setIsLoggedIn(true);
-                setIsLoaded(true);
-            })
-            .catch(function (error) {
-                console.log(error);
-                setIsLoggedIn(false);
-                setIsLoaded(true);
-            });
-            // setIsLoggedIn(true);
-        } else {
-            setIsLoggedIn(false);
-            setIsLoaded(true);
-        }
-
+        // if (token) {
+        //     //verifier le token grâce à un appelle api
+        //     console.log('le token',token)
+        //     axios.post('http://10.0.2.2:8080/api/token/verify',{
+        //         token: token
+        //     }).then((response) => {
+        //         console.log('response',response.data.token)
+        //         setIsLoggedIn(true);
+        //         setIsLoaded(true);
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //         setIsLoggedIn(false);
+        //         setIsLoaded(true);
+        //     });
+        //     // setIsLoggedIn(true);
+        // } else {
+        //     setIsLoggedIn(false);
+        //     setIsLoaded(true);
+        // }
+        setIsLoaded(true)
     }, []);
     
 

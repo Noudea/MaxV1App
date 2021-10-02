@@ -4,7 +4,7 @@ import AuthProvider from './AuthProvider';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const GeneralProvider = ({children, ...props}) => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
 
     const authContext = {
         isLoggedIn,
